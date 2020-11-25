@@ -4,9 +4,13 @@ namespace TestProjectForInterLink
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello World!");
+            InputAndOutput input = new InputAndOutput();
+            input.Message += InputAndOutput.MessageOutput;
+
+            string pathToFile = input.InputPathToFile(); 
+            string pathToNewFile = input.OutputPathtoFile();
         }
     }
 }
